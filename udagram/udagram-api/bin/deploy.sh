@@ -1,5 +1,7 @@
-cd www
-printenv > .env
-eb init --region $AWS_DEFAULT_REGION
-eb list
-eb use $EB_ENV
+eb setenv JWT_SECRET=$JWT_SECRET
+eb setenv PORT=$PORT 
+eb setenv POSTGRES_DB=$POSTGRES_DB
+eb setenv POSTGRES_HOST=$POSTGRES_HOST 
+eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME 
+eb setenv AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
