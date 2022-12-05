@@ -2,9 +2,6 @@
   "name": "udagram-api",
   "version": "2.0.0",
   "description": "",
-  "engines": {
-    "node": "14.15.0"
-  },
   "main": "server.ts",
   "scripts": {
     "start": "node ./www/server.js",
@@ -13,11 +10,12 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
-    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
+  
   "license": "ISC",
   "dependencies": {
     "@types/bcryptjs": "2.4.2",
