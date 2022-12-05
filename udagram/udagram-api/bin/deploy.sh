@@ -5,4 +5,3 @@ eb create --sample $EB_ENV
 eb use $EB_ENV
 eb deploy $EB_ENV
 eb open
-eb terminate $EB_ENV
