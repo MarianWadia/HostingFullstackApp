@@ -58,18 +58,20 @@ jobs:
       - eb/setup
       - aws-cli/setup
       - checkout
+      # TODO: Build the frontend       
+      - run:
+          name: Deploy Frontend
+          command: |
+            echo "TODO: Build the Frontend"
+            npm run frontend:deploy
+       # TODO: Build the backend API
       - run:
           name: Deploy Backend
           # TODO: Install, build, deploy in both apps
           command: |
             echo "the Backend API"
             npm run api:deploy
-      # TODO: Build the backend API      
-      - run:
-          name: Deploy Frontend
-          command: |
-            echo "TODO: Build the Frontend"
-            npm run frontend:deploy
+     
             
 workflows:
   udagram:
