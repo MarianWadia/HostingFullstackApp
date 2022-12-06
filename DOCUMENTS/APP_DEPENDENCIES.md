@@ -10,4 +10,4 @@
 
 - Also in that project, we created the database using postgres so, you will also need to have pg-admin server installed for local usage.
 
-- For automated pipline you just need to have a circleCi account and then connecting it to your repo so you can use it for Continous Delivery (CD) and Continous Integration
+- For automated pipline you just need to have a circleCi account signed by your github account and then connecting it to your repo so you can use it for Continous Integration (CI) and Continous Delivery (CD).
