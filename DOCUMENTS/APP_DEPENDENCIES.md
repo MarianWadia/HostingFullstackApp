@@ -1,7 +1,13 @@
-##The App Dependencies
+#The App Dependencies
 
-This FullstackApp is mainly dependent on 3 services of aws (Amazon Web Services) in order to host that app and have it in its production enviroment state, Those services are:
+### Getting Started
+ To get started, clone this repo and run `yarn` or `npm i` in your terminal at the project root.
 
-    1- Relationl Database Services (RDS), for enabling database.
-    2- S3 Bucket Services, for enabling static web hosting storage.
-    3-  
+## Required Technologies
+- You have to add a .env file in the repo, you can use the set_env.sh file found in the repo root folder to export those env variables.
+
+- You should firstly have node.js already installed moreover aws cli and its dedicated version for aws elastic beanstalk commands which is eb cli.
+
+- Also in that project, we created the database using postgres so, you will also need to have pg-admin server installed for local usage.
+
+- For automated pipline you just need to have a circleCi account and then connecting it to your repo so you can use it for Continous Delivery (CD) and Continous Integration
